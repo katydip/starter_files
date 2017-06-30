@@ -37,9 +37,8 @@ img{
 .wrapper{
     background-color: #F5FFEB;
     width: 1000px;
-    
     /** TODO 1: Center the site on the screen **/
-
+    margin: auto;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -55,14 +54,26 @@ img{
 /* TODO: Arrange the logo and navigation links into a row */
 
 #logo{
-    /* #logo styles here */
+    float: left;
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    padding-top: 0;
 }
-#main_nav{
 
+#main_nav{
+    float: right;
+    text-align: right;
+    width: 75%;
     /* #main_nav styles here */
 }
 #main_nav a{
     background-color: #E57727;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
 
     /* #navigation button styles here */
 }
@@ -87,14 +98,18 @@ img{
 **/
 #call_to_action div{
     /* text column styles here */
+    float: left;
+    width: 55%;
 }
 #call_to_action img{
     /* image column styles here */
+    width: 35%;
+    float: right;
 }
 #call_to_action h1, #call_to_action p{
     color: white;
 }
-#call_to_action a{   
+#call_to_action a{
     background-color: #E57727;
     display: inline-block;
     padding: 12px 18px;
@@ -104,7 +119,7 @@ img{
 }
 #call_to_action a:hover{
     background-color: #278A96;
-} 
+}
 
 /***************************/
 /**** FEATURED STYLES ******/
@@ -129,18 +144,27 @@ img{
 
 #featured_products li{
     /* list item styles here */
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+
 }
 #featured_products li:last-child{
     /* styles for the last li here */
+    float: right;
+    width: 30%;
+    margin-right: 0;
 }
 #featured_products li img{
     border-radius: 4px;
 }
 #featured_products h2{
     /* TODO 4: Match the styles of the h2 to the mockup */
+    text-transform: uppercase;
+    font-size: 18px;
 }
 #featured_products p{
-    margin-top: 0;
+    margin-top: 5px;
 }
 #featured_products a{
     color: #E57727;
@@ -178,6 +202,11 @@ img{
 }
 #products header{
     /* TODO 5: Style the product list header to match the mockup */
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 80px;
+    border-bottom: 2px solid black;
+
 }
 #products header p{
     text-transform: uppercase;
@@ -196,7 +225,10 @@ img{
 
 #products li{
     /* Height is set to stabalize the grid */
+    float: left;
     height: 380px;
+    width: 300px;
+    padding-right: 25px;
 
     /* Additional styles for the li elements here */
 }
@@ -211,16 +243,3 @@ img{
 #products p{
     margin-top: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
